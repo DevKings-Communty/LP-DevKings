@@ -1,0 +1,11 @@
+/* .teachers, .courses, .students, .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.teacher-title, .courses-title, .students-title, .contacts-title {
+  font-weight: 500;
+  font-size: 50px;
+  margin: 0 0 0 10%;
+} */

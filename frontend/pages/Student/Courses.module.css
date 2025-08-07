@@ -1,0 +1,375 @@
+.coursesHead {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.coursesHead h1 {
+  font-size: 100px;
+  margin: 63px 0;
+  font-weight: 600;
+}
+
+.formCourses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border: 1px solid #0c0c0c;
+  border-radius: 14px;
+  width: 466px;
+  height: 60px;
+  background-color: #F0F8FF;
+}
+
+.searchContainer img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.searchContainer input {
+  border: none;
+  outline: none;
+  background-color: #F0F8FF;
+  color: #0c0c0c;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.searchContainer input::placeholder {
+  color: #0c0c0c;
+  font-size: 20px;
+}
+
+.formCourses > img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+/* Filter dropdown styling */
+.filterContainer {
+  position: relative;
+  margin-left: 15px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F0F8FF;
+  border: none;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.dropdownToggle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dropdownArrow {
+  margin-left: 8px;
+  font-size: 10px;
+  transition: transform 0.2s ease;
+}
+
+.dropdownArrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 7px;
+}
+
+.dropdownItem {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.dropdownItem:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdownItem.active {
+  background-color: #e0f0ff;
+  font-weight: 500;
+}
+
+.courses {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.coursesTitle {
+  padding: 0 0 0 42px;
+  font-weight: 500;
+  font-size: 50px;
+  margin: 76px 0 76px 10%;
+  position: relative;
+}
+
+.coursesTitle::before {
+  content: '';
+  position: absolute;
+  background-color: #00FF5E;
+  width: 17px;
+  top: -17%;
+  left: 0;
+  height: 101px;
+  border-radius: 7px;
+}
+
+.coursesCard {
+  padding: 0 10%;
+}
+
+.categorySection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 76px;
+  margin-bottom: 40px;
+}
+
+.categoryTitle {
+  padding: 20px 0;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 0 20px 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.categoryTitle::before {
+  content: '';
+  position: absolute;
+  background-color: #00FF5E;
+  width: 15px;
+  height: 70px;
+  top: 0px;
+  left: 0;
+  border-radius: 7px;
+}
+
+.categoryCourses {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.showBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.courseViewAll {
+  color: #F0F8FF;
+  background-color: #0c0c0c;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: fit-content;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.viewAllBtn {
+  background-color: #F0F8FF;
+  border: 1px solid rgba(12, 12, 12, 0.5);
+  border-radius: 14px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.2s ease;
+  color: #0c0c0c;
+}
+
+.viewAllBtn:hover {
+  background-color: #e8e8e8;
+  color: #000;
+}
+
+/* Courses count styling */
+.categoryHeader {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 15px;
+}
+
+.categoryTitle {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.courseCount {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  color: #0c0c0c;
+  font-weight: normal;
+}
+
+/* Filter results info */
+.filterInfo {
+  padding: 25px;
+  background-color: #F0F8FF;
+  border-radius: 7px;
+  font-size: 20px;
+}
+
+.clearFilters {
+  margin-left: 15px;
+  padding: 10px 15px;
+  background-color: #F0F8FF;
+  border: 1px solid rgba(12, 12, 12, 0.75);
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+.clearFilters:hover {
+  background-color: #e0e0e0;
+}
+
+/* No courses message */
+.noCourses {
+  padding: 25px;
+  text-align: center;
+  background-color: #F0F8FF;
+  border-radius: 7px;
+  margin: 20px 0;
+}
+
+.noCourses h3 {
+  margin-bottom: 10px;
+  color: rgba(12, 12, 12, 0.75);
+}
+
+.noCourses p {
+  color: rgba(12, 12, 12, 0.5);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+  .categoryCourses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .coursesHead h1 {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .categoryCourses {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .coursesHead h1 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  
+  .categoryTitle {
+    font-size: 20px;
+    margin: 0 0 15px 5%;
+    padding: 0 0 0 25px;
+  }
+  
+  .categoryTitle::before {
+    width: 4px;
+  }
+  
+  .noCourses {
+    grid-column: span 1;
+  }
+}
+
+/* Hover effects */
+.coursesHead div form div:hover {
+  border-color: #555;
+}
+
+.coursesHead div form div img:hover {
+  opacity: 0.7;
+}
+
+.formCourses > img:hover {
+  opacity: 0.7;
+}
+
+.courseView-all:hover {
+  background-color: #222;
+}
+
+.errorState {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #0c0c0c;
+  gap: 20px;
+}
+
+.errorState button {
+  background-color: #F0F8FF;
+  border-radius: 7px;
+  padding: 15px;
+  font-size: 20px;
+  color: #0c0c0c;
+  outline: none;
+}
+

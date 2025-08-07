@@ -1,0 +1,120 @@
+:root {
+  --primary-color: #0c0c0c;
+  --accent-color: #f0f0f0;
+  --light-bg: #f9f9f9;
+  --hover-color: #1a1a1a;
+}
+
+.sectionTeachers {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.sectionCourses {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.sectionStudents {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.sectionTeachers h1, .sectionCourses h1, .sectionStudents h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #0c0c0c;
+}
+
+.teacherContainer {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.teacherContainer button {
+  border: none;
+  background-color: #F0F8FF;
+}
+
+.courseContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+.categoryContainer {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.categoryContainer button {
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: none;
+  background: #0c0c0c;
+  color: #F0F8FF;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.categoryContainer button:hover {
+  background: var(--hover-color);
+}
+
+.teachersCards {
+  display: flex;
+  align-items: center;
+  gap: 68px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.teachersCards::-webkit-scrollbar {
+  width: 0;
+}
+
+.sectionStudents .subTitle {
+  font-size: 30px;
+  font-weight: 300;
+  padding: 40px 0;
+}
+
+.sectionStudents .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 68px;
+}
+
+.containerCourseButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewAll {
+  width: 264px;
+  height: 90px;
+  border-radius: 14px;
+  background-color: #0c0c0c;
+  color: #f0f8ff;
+  font-size: 25px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}

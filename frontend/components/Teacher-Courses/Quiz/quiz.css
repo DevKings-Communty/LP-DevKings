@@ -1,0 +1,84 @@
+.quiz-container{
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.quiz-container h2{
+    margin-bottom: 10px;
+}
+
+.question-card{
+    display: flex;
+    gap: 20px;
+    padding: 14px;
+    background: #b8d8e161;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+#question{
+    height: 170px;
+}
+.question-card .question{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    flex: 1; 
+}
+.question .input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.options-container{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    flex: 1;
+}
+.options-container .option{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
+}
+input, textarea{
+    border-radius: 8px;
+    padding: 9px 20px;
+    outline: none;
+    border: 2px solid #b0abab;
+}
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.button-container button{
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(47, 255, 75);
+}
+.parent{
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.deleteButton{
+    background: #ffffff00;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 540;
+    border: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}

@@ -1,0 +1,91 @@
+.add-courseForm-cpntainer{
+    background: #ffffff;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 17px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+    gap: 20px;
+}
+.upload-container span{
+    font-size: 14px;
+}
+.upload-container .input-container {
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 450px;
+    border: 3px dashed rgb(48, 47, 47);
+    border-radius: 10px;
+    cursor: pointer;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.input-container:hover {
+    background-color: #f5f5f5;
+}
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.input-group div input, .input-group div select,.input-group div textarea {
+    font-size: 17px;
+    padding: 10px 21px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.input-group div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+.input-group   input, .input-group textarea{
+    flex: 1;
+}
+
+.saveCourse-Btn{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(54, 255, 47);
+    font-size: 19px;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    justify-content: end;
+    margin: 0 auto;
+}
+.saveCourse-Btn:hover{
+    transform: scale(1.05);
+}
+.buttons-container{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.buttons-container button{
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    background: rgb(47, 255, 54);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.thumbnail-preview {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

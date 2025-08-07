@@ -1,0 +1,79 @@
+.section-contacts {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.section-contacts h1 {
+  width: 100%;
+  font-size: 50px;
+  font-weight: 500;
+  color: #0c0c0c;
+}
+
+.contact-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-group img{
+  max-height: 600px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-input {
+  width: 588px;
+  height: 65px;
+  border: 3px solid #0c0c0c;
+  border-radius: 14px;
+  font-size: 25px;
+  color: #0c0c0c;
+  background-color: #F0F8FF;
+  padding: 20px 10px;
+}
+
+.contact-textarea {
+  width: 588px;
+  height: 205px;
+  border: 3px solid #0c0c0c;
+  border-radius: 14px;
+  font-size: 25px;
+  color: #0c0c0c;
+  background-color: #F0F8FF;
+  padding: 20px;
+}
+
+.contact-input::placeholder, .contact-textarea::placeholder {
+  color: #0c0c0c;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.contact-content button {
+  color: #F0F8FF;
+  background-color: #0c0c0c;
+  border-radius: 14px;
+  padding: 10px;
+  font-size: 30px;
+  width: 200px;
+  height: 70px;
+}

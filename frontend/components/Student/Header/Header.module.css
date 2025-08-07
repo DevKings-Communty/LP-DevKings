@@ -1,0 +1,87 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 0;
+}
+
+nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px;
+}
+
+.navList {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navList li .linkNav {
+  color: #0c0c0c;
+  font-size: 20px;
+}
+
+.auth {
+  font-size: 20px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth .register {
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 14px;
+  background-color: #0c0c0c;
+  color: #f0f8ff;
+}
+
+.auth .login {
+  padding: 15px;
+  background-color: #f0f8ff;
+  color: #0c0c0c;
+  border: 3px solid #0c0c0c;
+  border-radius: 14px;
+}
+
+.logoutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoutContainer li {
+  font-size: 15px;
+  background: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoutContainer li span {
+  background: #f0f8ff;
+  color: #0c0c0c;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.logoutContainer li span.userName {
+  color: rgba(12, 12, 12, 0.5);
+  font-weight: 500;
+}
+
+.logout {
+  padding: 10px;
+  border-radius: 14px;
+  color: #0c0c0c;
+  font-size: 15px;
+  font-weight: 400;
+  border: none;
+}

@@ -1,0 +1,143 @@
+body.lesson-page {
+  background: #f4faff;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #181818;
+  margin: 0;
+  padding: 0;
+}
+
+.lesson-root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 0px 20px;
+  background: #f4faff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lesson-header {
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.lesson-header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+}
+
+.lesson-header h1::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 40px;
+  background: #00FF5E;
+  border-radius: 6px;
+  margin-right: 14px;
+}
+
+.lesson-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.lesson-media img,
+.lesson-media video {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+.lesson-description-card {
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+  width: 100%;
+}
+
+.lesson-description-card h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.lesson-description-card p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.lesson-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
+.btn-next-lesson {
+  background: #00FF5E;
+  color: #181818;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 4px 16px rgba(0,255,94,0.08);
+}
+.btn-next-lesson:disabled {
+  background: #c0ffd8;
+  color: #888;
+  cursor: not-allowed;
+}
+.btn-next-lesson:hover:not(:disabled) {
+  background: #00d18c;
+}
+
+.btn-prev-lesson {
+  background: #181818;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 4px 16px rgba(24,24,24,0.08);
+}
+.btn-prev-lesson:disabled {
+  background: #e0e0e0;
+  color: #888;
+  cursor: not-allowed;
+}
+.btn-prev-lesson:hover:not(:disabled) {
+  background: #333;
+}
+
+@media (max-width: 800px) {
+  .lesson-root {
+    padding: 20px 6px 40px 6px;
+  }
+  .lesson-header h1 {
+    font-size: 28px;
+  }
+  .lesson-media img,
+  .lesson-media video {
+    max-width: 100vw;
+    height: auto;
+  }
+}

@@ -1,0 +1,63 @@
+.courses-container{
+    margin-top: 130px;
+    margin-left: 250px;
+    margin-bottom: 10px;
+}
+.searchBar {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+button.delete{
+  background: red;
+}
+button.edit-card{
+  background: rgb(39, 109, 184);
+}
+.search-input {
+  padding: 0.5rem 1rem;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+
+}
+
+.cards {
+ justify-content: center;
+   align-items: center;
+   gap: 20px;
+  display: flex;
+  min-width: 800px;
+  flex-wrap: wrap;
+}
+.no-courses{
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  justify-content: center;
+  align-items: center;
+}
+
+.no-courses p{
+  font-size: 30px;
+}
+
+.no-courses img{
+  max-width: 400px;
+  max-height: 270px;
+}
+
+.no-courses button{
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: none;
+  background: rgb(5, 241, 21);
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+.no-courses button:hover{
+  transform: scale(1.05);
+}

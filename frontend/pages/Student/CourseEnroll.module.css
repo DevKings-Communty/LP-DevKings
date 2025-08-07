@@ -1,0 +1,315 @@
+.heroCourse, .descrpitionCourse, .benefitCourse, .prerequisiteCourse, .reviewCourse, .faqCourse {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    margin: 20px;
+}
+
+.descrpitionCourse h1, .benefitCourse h1, .prerequisiteCourse h1, .reviewCourse h1, .faqCourse h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.descrpitionCourse div {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.heroCourse .heroTitle {
+    font-size: 90px;
+    position: relative;
+    padding-left: 50px;
+}
+
+.heroCourse .heroTitle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 17px;
+    height: 100%;
+    background-color: #00FF5E;
+    border-radius: 14px;
+}
+
+.heroCourseContainer {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.heroCourseContainer .heroCourseInfo {
+    width: 831px;
+    height: 683px;
+    position: relative;
+}
+
+.heroShapeCourse {
+    width: 588px;
+    height: 351px;
+    border-radius: 14px;
+    background-color: #0c0c0c;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+
+.heroCourseCover {
+    width: 710px;
+    height: 670px;
+    position: absolute;
+    right: 0;
+}
+
+.heroCourseCover .heroCourseCoverImg {
+    width: 710px;
+    height: 398px;
+    position: absolute;
+    z-index: 3;
+}
+
+.heroCourseCover .heroCoverInfo {
+    width: 588px;
+    height: 449px;
+    background-color: #0c0c0c;
+    color: #F0F8FF;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.heroCourseCover .heroCoverInfo .heroCoverInfoTeacher {
+    width: 548px;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heroCatInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroCatInfoTeacher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroCatInfo .heroInfoPrice {
+    width: 166px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.heroCatInfo .heroInfoPrice .heroCatInfoPrice {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.heroCatInfo .heroInfoPrice .heroCat {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.heroCatInfo .heroInfoPrice .heroCat .heroCatInfoPercentage {
+    width: 84px;
+    height: 34px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00FF5E;
+}
+
+.heroCatInfo .heroInfoPrice .heroCat .heroCatInfoPriceOld {
+    font-size: 25px;
+    color: #6A6A6A;
+    text-decoration: line-through;
+}
+
+.heroCatInfoCourse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.heroCatInfoCourse div {
+    display: flex;
+    gap: 12px;
+}
+
+.heroCatInfoCourse div .heroCatInfoKey {
+    font-weight: 700;
+}
+
+.heroCatInfoCourse div .heroCatInfoValue {
+    font-weight: 300;
+}
+
+.heroCatInfoCourse div .heroCatInfoKey, .heroCatInfoCourse div .heroCatInfoValue {
+    font-size: 15px;
+}
+
+.heroCatInfoTeacher .heroCatInfoAction {
+    width: 321px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heroCatInfoTeacher .heroCatInfoAction .heroCatInfoAdd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroCatInfoTeacher .heroCatInfoAction .heroCatInfoAdd a {
+    width: 207px;
+    height: 41px;
+    border-radius: 7px;
+    border: 1px solid #00FF5E;
+    color: #0c0c0c;
+    background-color: #F0F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroCatInfoTeacher .heroCatInfoAction a {
+    width: 321px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    color: #0c0c0c;
+    background-color: #00FF5E;
+}
+
+.heroCourseContainer .heroTeacherInfo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.heroCourseContainer .heroTeacherInfo .studentProfileCard {
+    width: 345px;
+    height: 380px;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: #0c0c0c;
+}
+
+.heroCourseContainer .heroTeacherInfo .studentsProfileCardHead div h1 {
+    color: #F0F8FF;
+    font-weight: 400;
+}
+
+.heroCourseContainer .heroTeacherInfo .studentProfileCard .studentsProfileCardPerformance .count,
+.heroCourseContainer .heroTeacherInfo .studentProfileCard .studentsProfileCardPerformance .title {
+    color: #F0F8FF;
+}
+
+/* .descrpitionCourse h1, .benefitCourse h1, .prerequisiteCourse h1, .reviewCourse h1, .faqCourse h1 */
+
+.benefitCourse .benefitContainer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    color: #F0F8FF;
+    background-color: #0c0c0c;
+    border-radius: 7px;
+}
+
+.benefitCourse .benefitContainer .benefitCover {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.benefitCourse .benefitContainer .benefitCover .benefitKey {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #F0F8FF;
+}
+
+.prerequisiteCourse .prerequisiteContainer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    color: #F0F8FF;
+    background-color: #0c0c0c;
+    border-radius: 7px;
+}
+
+.prerequisiteCourse .prerequisiteContainer .prerequisiteCover {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.prerequisiteCourse .prerequisiteContainer .prerequisiteCover .prerequisiteKey {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #F0F8FF;
+}
+
+.faqContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.faqContainer .faqLeft, .faqContainer .faqRight {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.faqLeftLeft, .faqRightLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 20px;
+    width: 40%;
+    height: 309px;
+    border-radius: 7px;
+    background-image: linear-gradient(135deg, #bbbbbb, #555555);
+}
+
+.faqLeftRight, .faqRightRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 20px;
+    width: 60%;
+    height: 309px;
+    border-radius: 7px;
+    background-image: linear-gradient(135deg, #bbbbbb, #555555);
+}

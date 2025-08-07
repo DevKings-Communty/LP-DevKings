@@ -1,0 +1,46 @@
+aside {
+  width: 240px;
+  height: 100vh;
+  background: #fff;
+  border-right: 1px solid #eee;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.mainAddCourse {
+  display: flex;
+  padding-top: 110px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 120px 30px 30px;
+  margin-left: 240px; /* for sidebar */
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  background: rgb(255, 255, 255);
+  z-index: 100;
+  padding: 30px;
+  max-width: calc(100% - 240px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header-actions{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-profile{
+ 
+  width: 200px;
+  gap: 20px;
+}

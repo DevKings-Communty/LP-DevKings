@@ -1,0 +1,160 @@
+.loginContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.loginForm {
+    width: 588px;
+    height: 594px;
+    padding: 15px 0;
+    color: #F0F8FF;
+    border-radius: 14px;
+    background-color: #0c0c0c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.loginLogo {
+    width: 170px;
+    height: 170px;
+}
+
+.loginLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+.loginForm form {
+    width: 345px;
+    height: 348px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.loginText {
+    width: 588px;
+    height: 196px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imageReg{
+    height: 400px;
+}
+.loginText .loginTitleOne, .loginText .loginTitleTwo {
+    font-size: 60px;
+}
+
+.loginText .loginTitleTwo span {
+    color: #4E2DA1;
+}
+
+.switchAuth {
+    display: flex;
+    gap: 26px;
+}
+
+.signin, .signup {
+    font-size: 13px;
+    color: #F0F8FF;
+    position: relative;
+}
+
+.signin::before {
+    content: '';
+    width: 100%;
+    height: 5px;
+    bottom: -10px;
+    position: absolute;
+    background-color: #ccc;
+    border-radius: 7px;
+}
+
+.labelCheckox {
+    width: 100%;
+    display: flex;
+}
+
+.labelInput {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.labelInput label {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.labelInput input {
+    width: 345px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    padding: 0 10px;
+}
+
+.formBtnAuth {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+.labelCheckbox {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.labelCheckbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 7px;
+    background-color: #ccc;
+}
+
+.labelCheckbox div {
+    font-size: 13px;
+}
+
+.formBtnAuth button {
+    width: 113px;
+    height: 36px;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: #F0F8FF;
+    color: #0c0c0c;
+    font-size: 13px;
+    font-weight: 300;
+    border: none;
+}
+
+.formForgot {
+    width: 345px;
+}
+
+.forgot {
+    color: #F0F8FF;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 13px;
+    font-weight: 700;
+}

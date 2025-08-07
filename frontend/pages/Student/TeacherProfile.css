@@ -1,0 +1,438 @@
+.teacher-profile {
+  width: 80%;
+  display: flex;
+}
+
+.teacher-profile-students,
+.teacher-profile-courses,
+.teacher-profile-reviews {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.teacher-profile .teacher-info {
+  position: relative;
+  width: 710px;
+  height: 353px;
+  color: #f0f8ff;
+  border-radius: 7px;
+  background-color: #0c0c0c;
+}
+
+.teacher-profile .teacher-info .teacher-shape {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 171px;
+  background-color: #c4ffd6;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.teacher-profile .teacher-info .teacher-bio {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 670px;
+  height: 224px;
+  margin: 102px 20px 27px;
+  z-index: 2;
+}
+
+.teacher-bio .teacher-bio-head {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.teacher-bio .teacher-bio-head div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.teacher-bio .teacher-bio-head div h1 {
+  font-size: 30px;
+  color: #0c0c0c;
+  font-weight: 500;
+}
+
+.teacher-bio .teacher-bio-head div p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  gap: 3px;
+}
+
+.teacher-bio .teacher-bio-head div p::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 3px;
+  height: 18px;
+  background-color: #00ff5e;
+  border-radius: 7px;
+}
+
+.teacher-bio .teacher-bio-head div p span {
+  font-size: 13px;
+  color: rgba(240, 248, 255, 0.5);
+}
+
+.teacher-bio .teacher-bio-body {
+  font-size: 14px;
+}
+
+.teacher-profile .teacher-performance {
+  width: 466px;
+  height: 353px;
+}
+
+.teacher-performance-right {
+  height: 353px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teacher-performance-right .performance-right {
+  color: #f0f8ff;
+  background-color: #0c0c0c;
+  border-radius: 7px;
+  width: 223px;
+  height: 171px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+
+.teacher-performance-right .performance-right .title,
+.teacher-performance-right .performance-right .count {
+  font-size: 20px;
+  text-align: center;
+  width: 80px;
+}
+
+.teacher-performance-right .performance-right .count {
+  color: #00ff5e;
+}
+
+.teacher-profile-students h1 {
+  font-size: 40px;
+}
+
+.teacher-profile-students div .students-profile-cards {
+  padding: 42px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+.teacher-profile-students div .students-profile-cards .student-profile-card {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  background-color: #0c0c0c;
+  padding: 20px;
+  color: #f0f8ff;
+  gap: 20px;
+}
+
+.students-profile-card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.students-profile-card-head img {
+  width: 70px;
+  height: 70px;
+}
+
+.students-profile-card-head div h1 {
+  font-size: 20px;
+}
+
+.students-profile-card-head div p {
+  font-size: 13px;
+  color: rgba(240, 248, 255, 0.5);
+}
+
+.students-profile-card-bio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.students-profile-card-bio .students-profile-card-body {
+  font-size: 10px;
+  font-weight: 200;
+  color: #f0f8ff;
+}
+
+.teacher-profile-courses h1 {
+  font-size: 40px;
+}
+
+.teacher-profile-reviews h1 {
+  font-size: 40px;
+}
+
+.student-profile-card .students-profile-card-performance {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.student-profile-card .students-profile-card-performance .card-performance {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.student-profile-card .students-profile-card-performance .card-performance img {
+  width: 24px;
+  height: 24px;
+}
+
+.students-profile-card-performance .card-performance .count,
+.students-profile-card-performance .card-performance .title {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.student-profile-card svg {
+  position: absolute;
+  bottom: 0;
+  left: 130px;
+  transform: translate(50%, 50%);
+}
+
+.courses-profile-cards {
+  padding: 42px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+.course-profile-card {
+  background-color: #0c0c0c;
+  width: 345px;
+  height: 262px;
+  border-radius: 7px;
+}
+
+.course-profile-card .head-card {
+  width: 345px;
+  height: 121px;
+}
+
+.course-profile-card .head-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-profile-card .body-card {
+  margin: 11px 20px;
+  color: #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 305px;
+  height: 119px;
+}
+
+.body-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.course-profile-card .body-card .body-card-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.course-profile-card .body-card .body-card-head .content-card-head {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.course-profile-card
+  .body-card
+  .body-card-head
+  .content-card-head
+  .body-card-head-cat {
+  width: 43px;
+  height: 22px;
+  font-size: 10px;
+  font-weight: 300;
+  background-image: linear-gradient(135deg, #bbbbbb, #555555);
+  border-radius: 7px;
+  color: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-profile-card
+  .body-card
+  .body-card-head
+  .content-card-head
+  .body-card-head-line {
+  width: 15px;
+  height: 3px;
+  border-radius: 7px;
+  background-color: #d9d9d9;
+}
+
+.course-profile-card
+  .body-card
+  .body-card-head
+  .content-card-head
+  .body-card-head-name {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.course-profile-card .body-card .body-card-head .content-card-body {
+  width: 120px;
+  height: 51px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.course-profile-card
+  .body-card
+  .body-card-head
+  .content-card-body
+  .body-card-level {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.course-profile-card
+  .body-card
+  .body-card-head
+  .content-card-body
+  .body-card-count {
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 10px;
+}
+
+.course-profile-card
+  .body-card
+  .body-card-head
+  .content-card-body
+  .body-card-count::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 3px;
+  height: 18px;
+  border-radius: 7px;
+  background-color: #00ff5e;
+}
+
+.body-card-container .body-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.body-card-container .body-card-body .icons-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-card-container .body-card-body a {
+  width: 105px;
+  height: 35px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0c0c0c;
+  font-weight: 500;
+  background-color: #00ff5e;
+  font-size: 10px;
+  border-radius: 7px;
+}
+
+.review-profile-cards {
+  width: 100%;
+  padding: 42px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-profile-card {
+  padding: 20px;
+  width: 466px;
+  height: 231px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 7px;
+  background-color: rgba(91, 91, 91, 0.5);
+}
+
+.review-profile-card .review-profile-card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.review-profile-card .review-profile-card-head img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.review-profile-card .review-profile-card-head .info-card-head h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.review-profile-card .review-profile-card-body {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#file {
+  width: 100%;
+  height: 20px;
+  border-radius: 7px;
+}
+
+#file::-webkit-progress-bar {
+  background-color: #f0f8ff;
+  border-radius: 7px;
+}
+
+#file::-webkit-progress-value {
+  background-color: #00ff5e;
+  border-radius: 7px;
+}

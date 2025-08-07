@@ -1,0 +1,322 @@
+:root {
+  --enrolled-bg: #f5f8fa;
+  --enrolled-dark: #181818;
+  --enrolled-accent: #00FF5E;
+}
+
+.enrolledRoot {
+  min-height: 100vh;
+  background: var(--enrolled-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enrolledContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 0 0 0;
+}
+
+.enrolledTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--enrolled-dark);
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.enrolledTitleBar {
+  display: inline-block;
+  width: 6px;
+  height: 36px;
+  background: var(--enrolled-accent);
+  border-radius: 4px;
+}
+.enrolledTopbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.formCourses {
+  display: flex;
+  align-items: center;
+  gap: 62px;
+  width: 100%;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border: 1px solid #0c0c0c;
+  border-radius: 14px;
+  width: 466px;
+  height: 60px;
+  background-color: #F0F8FF;
+}
+
+.searchContainer img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.searchContainer input {
+  border: none;
+  outline: none;
+  background-color: #F0F8FF;
+  color: #0c0c0c;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.searchContainer input::placeholder {
+  color: #0c0c0c;
+  font-size: 20px;
+}
+
+.filterContainer {
+  position: relative;
+  margin-left: 15px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdownToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F0F8FF;
+  border: none;
+  border-radius: 14px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.dropdownToggle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dropdownArrow {
+  margin-left: 8px;
+  font-size: 10px;
+  transition: transform 0.2s ease;
+}
+
+.dropdownArrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 7px;
+}
+
+.dropdownItem {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.dropdownItem:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdownItem.active {
+  background-color: #e0f0ff;
+  font-weight: 500;
+}
+
+.clearFilters {
+  margin-left: 15px;
+  padding: 10px 15px;
+  background-color: #F0F8FF;
+  border: 1px solid rgba(12, 12, 12, 0.75);
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+.clearFilters:hover {
+  background-color: #e0e0e0;
+}
+.enrolledSearch {
+  flex: 1;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background: #fff;
+  color: var(--enrolled-dark);
+  outline: none;
+}
+.enrolledSearch:focus {
+  border-color: var(--enrolled-accent);
+}
+.enrolledFilterBtn {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.enrolledFilterBtn:hover {
+  border-color: var(--enrolled-accent);
+}
+
+.enrolledGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.lessonCourseCard {
+  background: #232323;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  min-height: 350px;
+}
+.lessonCourseImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.lessonCourseContent {
+  padding: 20px 18px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.lessonCourseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.lessonCourseTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+.lessonCourseDuration {
+  font-size: 0.95rem;
+  color: #aaa;
+}
+.lessonCourseTeacher {
+  font-size: 0.98rem;
+  color: #d2d2d2;
+  margin-bottom: 12px;
+}
+.progressSection {
+  margin-bottom: 12px;
+}
+.progressInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.97rem;
+  color: #aaa;
+  margin-bottom: 3px;
+}
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background: #444;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--enrolled-accent) 0%, #00d18c 100%);
+  border-radius: 6px;
+  transition: width 0.3s;
+}
+.lessonCourseFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.btnStart {
+  background: var(--enrolled-accent);
+  color: #181818;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btnStart:hover {
+  background: #00d18c;
+}
+.completionStatus {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-left: 8px;
+}
+
+/* Pagination */
+.enrolledPagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.enrolledPageBtn {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 13px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--enrolled-dark);
+  transition: border-color 0.2s, background 0.2s;
+}
+.enrolledPageBtn.active, .enrolledPageBtn:hover {
+  border-color: var(--enrolled-accent);
+  background: var(--enrolled-accent);
+  color: #181818;
+}

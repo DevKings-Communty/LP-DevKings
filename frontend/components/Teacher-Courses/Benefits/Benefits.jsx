@@ -1,0 +1,52 @@
+import './benefits.css';
+
+const BenefitsList = ({ benefits, setBenefits,updateFullCourseData }) => {
+  const addBenefit = () => setBenefits([...benefits, ""]);
+
+  const updateBenefit = (index, value) => {
+    const newBenefits = [...benefits];
+    newBenefits[index] = value;
+    updateFullCourseData(prev=>({...prev,benefits:newBenefits}))
+    setBenefits(newBenefits);
+  };
+
+  const removeBenefit = (index) => {
+    const newBenefits = benefits.filter((_, i) => i !== index);
+    updateFullCourseData(prev=>({...prev,benefits:newBenefits}))
+    setBenefits(newBenefits);
+  };
+
+  return (
+    <div className='benefits-container'>
+      <h3>Benefits:</h3>
+      <div className="benefits">
+        {benefits.map((b, index) => (
+          <div className="benefit" key={index}>
+            <div className="input-group">
+              <label htmlFor={`benefit${index}`}>{`Benefit ${index + 1}`}</label>
+              <input
+                type="text"
+                id={`benefit${index}`}
+                value={b}
+                onChange={(e) => updateBenefit(index, e.target.value)}
+                placeholder="Enter benefit..."
+              />
+            </div>
+            <button
+              type="button"
+              onClick={() => removeBenefit(index)}
+            >
+              <i className="fas fa-trash"></i>
+            </button>
+          </div>
+        ))}
+
+        <button type="button" className='addBenefit' onClick={addBenefit}>
+          <i className="fas fa-plus"></i>
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default BenefitsList;
